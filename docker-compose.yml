@@ -1,0 +1,21 @@
+version: '2.2'
+services:
+  tidal-connect:
+    image: edgecrush3r/tidal-connect:latest
+    tty: true
+    network_mode: host
+    restart: unless-stop
+    devices:
+     - /dev/snd
+    environment:
+     - PLAYBACK_DEVICE=dmix
+     - FRIENDLY_NAME=Tidal Hifi Salon
+     - MODEL_NAME=Tidal Hifi Salon
+     - MQA_CODEC=false
+     - MQA_PASSTHROUGH=true
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh
+      - /var/run/dbus:/var/run/dbus
+    dns:
+      # - 8.8.8.8
+      - 192.168.1.30 # Custom
