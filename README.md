@@ -4,7 +4,7 @@ Based on the great work of TonyTromp : https://github.com/TonyTromp/tidal-connec
 ## Purpose
 This repo is a small extract of the project mentioned above to only get what I needed : **Tidal Connect using Docker on Raspberry Pi** accessible by all Tidal apps.
 
-![alt capture](https://raw.githubusercontent.com/cstaelen/plexampi-docker/master/screenshot/capture.png)
+<img src="https://github.com/cstaelen/docker-tidal-connect/blob/main/capture/capture-tidal.png?raw=true" width="200" />
 
 ### Parameters
 
