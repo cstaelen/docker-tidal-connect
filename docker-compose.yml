@@ -8,7 +8,7 @@ services:
     devices:
      - /dev/snd
     environment:
-     - PLAYBACK_DEVICE=dmix
+     - PLAYBACK_DEVICE=sysdefault
      - FRIENDLY_NAME=Tidal Hifi Salon
      - MODEL_NAME=Tidal Hifi Salon
      - MQA_CODEC=false
